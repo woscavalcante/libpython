@@ -3,6 +3,8 @@ Módulo para exemplificar construção de projetos Python.
 
 Link do Github: [Lib Python](https://github.com/woscavalcante/libpython)
 
+[![Build Status](https://travis-ci.org/woscavalcante/libpython.svg?branch=master)](https://travis-ci.org/woscavalcante/libpython)
+
 Suportado a versão 3 do Python
 
 Para instalar:
