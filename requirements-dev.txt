@@ -4,4 +4,14 @@ mccabe==0.6.1
 pycodestyle==2.6.0
 pyflakes==2.2.0
 zipp==3.1.0
+
+# Deps do pytest
+atomicwrites==1.4.0
+attrs==19.3.0
+colorama==0.4.3
+more-itertools==8.3.0
+pluggy==0.13.1
+py==1.8.1
+pytest==5.4.3
+wcwidth==0.2.3
 -r requirements.txt
