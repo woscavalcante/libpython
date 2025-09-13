@@ -8,15 +8,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:  # https://github.com/actions/python-versions/releases
-        python-version: ['3.9', '3.10', '3.11', '3.12', '3.13']
+        python-version: ['3.9', '3.10', '3.11', '3.12', '3.13', '3.14']
         os: ['macos-latest', 'ubuntu-latest', 'windows-latest']
     runs-on: ${{matrix.os}}
     name: Python ${{ matrix.python-version }} test on ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
       # Install from PyPI https://pypi.org/project/libpython
       - run: pip install libpython
